@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 try:
-    data = pd.read_csv('sales_data.csv')
+    data = pd.read_csv('"C:\Users\G.CHARITHA\Downloads\Day_7_sales_data.csv"')
 except FileNotFoundError:
     print("The file 'sales_data.csv' was not found.")
     exit()
