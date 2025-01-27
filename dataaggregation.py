@@ -1,0 +1,8 @@
+total_transaction_by_account_type = df.groupby('Account_Type')['Transaction_Amount'].sum()
+print(total_transaction_by_account_type)
+avg_balance_by_account_type = df.groupby('Account_Type')['Account_Balance'].mean()
+print(avg_balance_by_account_type)
+total_transactions_by_branch = df.groupby('Branch')['Transaction_Amount'].count()
+print(total_transactions_by_branch)
+avg_transaction_amount_by_branch = df.groupby('Branch')['Transaction_Amount'].mean()
+print(avg_transaction_amount_by_branch)
